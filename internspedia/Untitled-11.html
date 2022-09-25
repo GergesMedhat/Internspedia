@@ -1,0 +1,75 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Intern'spedia Master Project</title>  
+ <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <script src="js/app.js"></script>
+    <form method="post" action="" name="form1" onsubmit="return(validateForm());">
+      <h1>Registration Form</h1>
+      <label for="user id"> &ensp;&nbsp;&nbsp;User id: </label>
+      <input type="text" placeholder="Enter your id" name="userId" id="userId" required> <label class="rq">Required</label>
+      <br><br>
+      <label for="Password">Password: </label>
+      <input type="password" placeholder="Enter your password" name="password" id="password" required> <label class="rq">Required</label>
+      <br><br>
+      <label for="name">&ensp;&nbsp;&nbsp;&nbsp;&nbsp;Name: </label>
+      <input type="text" placeholder="Enter your name" name="Name" id="Name" required> <label class="rq">Required</label>
+      <br> <br>
+      
+      <label for="Address">&nbsp;&nbsp;&nbsp;Address:  </label>
+      <input type="text" placeholder="Enter your address" name="address" id="address"> <label class="rq">Optional</label>
+      <br><br>
+
+      <label for="Country">&nbsp;&nbsp;&nbsp;Country:  </label> 
+      <select name="Country" id="Country" required> 
+       <option value="" disabled selected>(Please select a country)</option> 
+       <option value="Austria">Austria</option>
+       <option value="Brazil">Brazil</option>
+       <option value="China">China</option>
+       <option value="Denmark">Denmark</option>
+       <option value="Egypt">Egypt</option>
+       <option value="England">England</option>
+       <option value="France">France</option>
+       <option value="Germany">Germany</option>
+       <option value="India">India</option>
+       <option value="Japan">Japan</option>
+       <option value="Portugal">Portugal</option>
+       <option value="Poland">Poland</option>
+       <option value="Russia">Russia</option>
+       <option value="Turkey">Turkey</option>
+       <option value="USA">USA</option>
+       <option value="Ukraine">Ukraine</option>
+      </select>
+      <br><br>
+      <label for="ZipCode">Zip Code: </label> 
+      <input type="number" placeholder="Enter your zip code" name="ZipCode" id="ZipCode" required> <label class="rq">Required</label>
+      <br><br>
+      <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: </label> 
+      <input type="email" placeholder="Enter your email" name="email" id="email" required> <label class="rq">Required</label>
+      <br><br>
+      <form>
+      <label for="sec">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gender: </label>
+      <input type="radio" name="Gender" value=0 id="male"  />Male
+      <input type=radio name="Gender"  value=1  id="female"/>Female 
+      <label class="rq">Required</label>
+      </form>
+      
+      <div class="checkbox-group required">
+      <label for="language">&nbsp;Language:</label>
+      <input type="checkbox" name="Language" value="0" id="check1" />Engilsh
+      <input type="checkbox" name="Language" value="1" id="check2" />Non Engilsh 
+      <label class="rq">Required</label>
+      </div>   
+      <br>
+      <label for="about">&nbsp;&nbsp;&nbsp;&nbsp;About: </label>
+      
+      <textarea placeholder="Optional.."  id="About"></textarea> <label class="rq">Optional</label>
+ 
+    </form>
+    <input type="submit" id="submit" value="Submit" onclick="validateForm()"/>
+    
+</body>
+
+</html>

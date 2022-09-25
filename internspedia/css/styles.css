@@ -1,0 +1,39 @@
+
+.rq {
+    color: #FF0000;
+    font-size: 10pt;
+    }
+    
+h1{
+    color: greenyellow;
+}    
+body{
+    background-image: url("Form.jpg");
+    font-size: large;
+    font-weight: bold;
+}
+
+input[type=text]:focus {
+    border: 3px solid red;
+    background-color: lightblue;
+  }
+input[type=password]:focus {
+    border: 3px solid red;
+    background-color: lightblue;
+  } 
+input[type=number]:focus {
+    border: 3px solid red;
+    background-color: lightblue;
+  }
+input[type=email]:focus {
+    border: 3px solid red;
+    background-color: lightblue;
+  }
+input[type=radio]:focus {
+    border: 3px solid red;
+    background-color: lightblue;
+  }
+input[type=checkbox]:focus {
+    border: 3px solid red;
+    background-color: lightblue;
+  }
